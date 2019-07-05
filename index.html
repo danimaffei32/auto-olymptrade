@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Configure Extension</title>
+	<link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
+</head>
+<body>
+	<div style="margin: 20px;">
+		<form id="formEnv">
+		  <div class="form-group">
+		    <label for="hora">Hora:</label>
+		    <input type="time" class="form-control" id="hora">
+		  </div>
+		  <select class="custom-select my-1 mr-sm-2" id="par">
+		    <option selected>Moeda</option>
+		    <option value="EURUSD">EUR/USD</option>
+		    <option value="USDJPY">USD/JPY</option>
+		    <option value="GBPUSD">GBP/USD</option>
+		    <option value="USDCHF">USD/CHF</option>
+		    <option value="USDCAD">USD/CAD</option>
+		    <option value="AUDUSD">AUD/USD</option>
+		    <option value="NZDUSD">NZD/USD</option>
+		  </select>
+		   <select class="custom-select my-1 mr-sm-2" id="status">
+		    <option selected>Status</option>
+		    <option value="Comprar">Comprar</option>
+		    <option value="Vender">Vender</option>
+		  </select>
+		  <button id="btn" style="margin-top: 10px;" type="submit" class="btn btn-primary">Cadastrar</button>
+		</form>
+	</div>
+	<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Par</th>
+      <th scope="col">Horario</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody id="bodyTable">
+    <!--<tr>
+      <th scope="row">USD/JPY</th>
+      <td>10:45</td>
+      <td>Comprar</td>
+    </tr>-->
+  </tbody>
+</table>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</html>
